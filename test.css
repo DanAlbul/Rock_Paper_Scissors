@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Press Start 2P', cursive;
+}
+body {
+	background-color: #f5eddc;
+}
+
+header {
+	padding: 2vh 0;
+	width: 100vw;
+	text-align: center;
+	color: white;
+	background-color: #222831;
+	border-bottom: 4px solid #eb1d36;
+}
+
+#app_block {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.score-block {
+	display: flex;
+	width: 100vw;
+	padding: 30px 0;
+	justify-content: center;
+}
+
+#score-board {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: 3px solid #293462;
+	align-items: center;
+	width: 150px;
+	height: 70px;
+	text-align: center;
+}
+
+.badge {
+	font-size: 13px;
+	background-color: #eb1d36;
+	margin-inline: 15px;
+	padding: 2px;
+	justify-content: space-between;
+	color: white;
+}
+
+#arena {
+	display: flex;
+	font-size: 25px;
+	justify-content: center;
+	width: 100vw;
+	flex-direction: row;
+}
+
+#computer-choice {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 100%;
+	border: 5px solid #eb1d36;
+	font-size: 50px;
+	color: white;
+	background-color: #3d3c42;
+	height: 170px;
+	width: 170px;
+	transition: border-radius 0.3s, width 0.5s;
+}
+
+#rock,
+#scissors,
+#paper {
+	/* cursor: pointer; */
+	padding: 20px;
+}
+
+#rock > img {
+	height: 105px;
+	width: 135px;
+	/* background-image: url('./assets/rock.png'); */
+	/* background-position: -43px; */
+}
+
+#paper > img {
+	height: 125px;
+	width: 125px;
+}
+
+#scissors > img {
+	width: 120px;
+	height: 125px;
+}
+
+.scale:hover {
+	/* animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; */
+	transform: scale(105%);
+}
+
+#choices {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+footer {
+	visibility: hidden;
+	color: white;
+	background-color: black;
+	height: 20vh;
+}
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(1px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-2px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(2px, 0, 0);
+	}
+}
+
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

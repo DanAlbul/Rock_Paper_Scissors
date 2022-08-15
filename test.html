@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="test.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Rock Paper Scissors</title>
+	</head>
+	<body>
+		<div id="app_block">
+			<header>
+				<h1>Rock Paper Scissors</h1>
+			</header>
+
+			<div id="arena">
+				<div id="computer-choice" data-id="rock">
+					<p id="question">?</p>
+				</div>
+			</div>
+
+			<div id="choices">
+				<div class="draggable" id="rock">
+					<img class="scale" data-id="rock" src="./assets/rock.png" draggable="true" />
+				</div>
+				<div class="draggable" id="paper">
+					<img class="scale" data-id="paper" src="./assets/paper.png" draggable="true" />
+				</div>
+				<div class="draggable" id="scissors">
+					<img
+						class="scale"
+						data-id="scissors"
+						src="./assets/scissors.png"
+						draggable="true"
+					/>
+				</div>
+			</div>
+		</div>
+		<script src="script.js" charset="utf-8"></script>
+	</body>
+</html>
